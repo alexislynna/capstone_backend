@@ -12,12 +12,12 @@ public class BeerData {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	private String name;
+	private String brand;
 	private String type;
 	
 	public BeerData() {}
-	public BeerData(String name, String type) {
-		this.name = name;
+	public BeerData(String brand, String type) {
+		this.brand = brand;
 		this.type = type;
 	}
 	public Integer getId() {
@@ -26,11 +26,11 @@ public class BeerData {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getBrand() {
+		return brand;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
 	public String getType() {
 		return type;
