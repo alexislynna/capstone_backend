@@ -43,6 +43,7 @@ public class BeerController {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Beer not found.");
 		}
 		
+		beerToEdit.setBrand(beer.getBrand());
 		beerToEdit.setType(beer.getType());
 		
 		return repository.save(beerToEdit);
