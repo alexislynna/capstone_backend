@@ -26,16 +26,10 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
-			.httpBasic()
-			.and()
 			.cors()
 			.and()
 			  .sessionManagement()
               .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-			.and()
-			  .authorizeRequests()
-			  .antMatchers(HttpMethod.GET, "/beerdata").permitAll()
-			  .anyRequest().authenticated()
 			.and()
 			  .csrf().disable();
 	}
