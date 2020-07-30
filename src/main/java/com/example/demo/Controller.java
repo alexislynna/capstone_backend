@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Beer.BeerData;
+import com.example.demo.capstone.Science.Planet;
 
 @RestController
 public class Controller {
